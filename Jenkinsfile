@@ -2,10 +2,6 @@
 pipeline {
     agent { label 'podman' }
 
-    options {
-        timestamps()
-    }
-
     triggers {
         pollSCM('H/5 * * * *')
     }
